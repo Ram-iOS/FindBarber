@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C576D21404154A9F21105A9C /* Pods_FindBarber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D13483CF3BB067EE23680C /* Pods_FindBarber.framework */; };
+		C827E7181FBA3FD8009539A9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C827E7161FBA3FD8009539A9 /* MapView.swift */; };
+		C827E7191FBA3FD8009539A9 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C827E7171FBA3FD8009539A9 /* MapView.xib */; };
+		C827E71B1FBA40EA009539A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C827E71A1FBA40EA009539A9 /* GoogleService-Info.plist */; };
+		C827E71E1FBA4753009539A9 /* man_img.png in Resources */ = {isa = PBXBuildFile; fileRef = C827E71D1FBA4753009539A9 /* man_img.png */; };
+		C827E7201FBA479E009539A9 /* CustomRoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C827E71F1FBA479E009539A9 /* CustomRoundImageView.swift */; };
+		C827E7231FBA48BD009539A9 /* location_tab_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = C827E7211FBA48BD009539A9 /* location_tab_selected.png */; };
+		C827E7241FBA48BD009539A9 /* location_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = C827E7221FBA48BD009539A9 /* location_tab.png */; };
+		C827E7281FBA496F009539A9 /* RKPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C827E7261FBA496E009539A9 /* RKPinView.swift */; };
+		C827E7291FBA496F009539A9 /* RKPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C827E7271FBA496E009539A9 /* RKPinView.xib */; };
+		C827E72B1FBA50CC009539A9 /* login_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C827E72A1FBA50CC009539A9 /* login_icon.png */; };
+		C827E72D1FBA5459009539A9 /* discover.png in Resources */ = {isa = PBXBuildFile; fileRef = C827E72C1FBA5459009539A9 /* discover.png */; };
+		C827E72F1FBA5C5F009539A9 /* discover_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C827E72E1FBA5C5F009539A9 /* discover_icon.png */; };
+		C827E7311FBA6180009539A9 /* settings_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C827E7301FBA6180009539A9 /* settings_icon.png */; };
+		C827E7351FBA61E0009539A9 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = C827E7321FBA61DF009539A9 /* search.png */; };
+		C827E7361FBA61E0009539A9 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = C827E7331FBA61DF009539A9 /* password.png */; };
+		C827E7371FBA61E0009539A9 /* username.png in Resources */ = {isa = PBXBuildFile; fileRef = C827E7341FBA61E0009539A9 /* username.png */; };
+		C827E7391FBA669E009539A9 /* BarberCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C827E7381FBA669E009539A9 /* BarberCollectionCell.swift */; };
+		C840A59B1FBA26DE0020B339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840A59A1FBA26DE0020B339 /* AppDelegate.swift */; };
+		C840A59D1FBA26DE0020B339 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840A59C1FBA26DE0020B339 /* ViewController.swift */; };
+		C840A5A01FBA26DE0020B339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C840A59E1FBA26DE0020B339 /* Main.storyboard */; };
+		C840A5A21FBA26DE0020B339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C840A5A11FBA26DE0020B339 /* Assets.xcassets */; };
+		C840A5A51FBA26DE0020B339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C840A5A31FBA26DE0020B339 /* LaunchScreen.storyboard */; };
+		C840A5AE1FBA2A550020B339 /* CustomRoundCornerBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840A5AD1FBA2A550020B339 /* CustomRoundCornerBtn.swift */; };
+		C840A5B11FBA2E620020B339 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840A5B01FBA2E620020B339 /* AppConstant.swift */; };
+		C840A5B41FBA2F860020B339 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840A5B31FBA2F860020B339 /* DiscoverVC.swift */; };
+		C840A5B61FBA2FBF0020B339 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840A5B51FBA2FBF0020B339 /* NearByVC.swift */; };
+		C840A5B91FBA36870020B339 /* DiscoverTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840A5B81FBA36870020B339 /* DiscoverTblCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19D13483CF3BB067EE23680C /* Pods_FindBarber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindBarber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C64DEBBC32EB94F95BF066 /* Pods-FindBarber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindBarber.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindBarber/Pods-FindBarber.debug.xcconfig"; sourceTree = "<group>"; };
+		C827E7161FBA3FD8009539A9 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C827E7171FBA3FD8009539A9 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		C827E71A1FBA40EA009539A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C827E71D1FBA4753009539A9 /* man_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man_img.png; sourceTree = "<group>"; };
+		C827E71F1FBA479E009539A9 /* CustomRoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomRoundImageView.swift; path = FindBarber/CutomButton/CustomRoundImageView.swift; sourceTree = SOURCE_ROOT; };
+		C827E7211FBA48BD009539A9 /* location_tab_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_tab_selected.png; sourceTree = "<group>"; };
+		C827E7221FBA48BD009539A9 /* location_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_tab.png; sourceTree = "<group>"; };
+		C827E7261FBA496E009539A9 /* RKPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKPinView.swift; sourceTree = "<group>"; };
+		C827E7271FBA496E009539A9 /* RKPinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKPinView.xib; sourceTree = "<group>"; };
+		C827E72A1FBA50CC009539A9 /* login_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_icon.png; sourceTree = "<group>"; };
+		C827E72C1FBA5459009539A9 /* discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discover.png; sourceTree = "<group>"; };
+		C827E72E1FBA5C5F009539A9 /* discover_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discover_icon.png; sourceTree = "<group>"; };
+		C827E7301FBA6180009539A9 /* settings_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_icon.png; sourceTree = "<group>"; };
+		C827E7321FBA61DF009539A9 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		C827E7331FBA61DF009539A9 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
+		C827E7341FBA61E0009539A9 /* username.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = username.png; sourceTree = "<group>"; };
+		C827E7381FBA669E009539A9 /* BarberCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberCollectionCell.swift; sourceTree = "<group>"; };
+		C840A5971FBA26DE0020B339 /* FindBarber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindBarber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C840A59A1FBA26DE0020B339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppDelegate/AppDelegate.swift; sourceTree = "<group>"; };
+		C840A59C1FBA26DE0020B339 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		C840A59F1FBA26DE0020B339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C840A5A11FBA26DE0020B339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C840A5A41FBA26DE0020B339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C840A5A61FBA26DE0020B339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C840A5AD1FBA2A550020B339 /* CustomRoundCornerBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomRoundCornerBtn.swift; path = FindBarber/CutomButton/CustomRoundCornerBtn.swift; sourceTree = SOURCE_ROOT; };
+		C840A5B01FBA2E620020B339 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppConstant.swift; path = ConstantFiles/AppConstant.swift; sourceTree = "<group>"; };
+		C840A5B31FBA2F860020B339 /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		C840A5B51FBA2FBF0020B339 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
+		C840A5B81FBA36870020B339 /* DiscoverTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTblCell.swift; sourceTree = "<group>"; };
+		F13AB17E40BD8A19925C9D7C /* Pods-FindBarber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindBarber.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindBarber/Pods-FindBarber.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C840A5941FBA26DD0020B339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C576D21404154A9F21105A9C /* Pods_FindBarber.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		311455158CC86AF7CAD2304C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64C64DEBBC32EB94F95BF066 /* Pods-FindBarber.debug.xcconfig */,
+				F13AB17E40BD8A19925C9D7C /* Pods-FindBarber.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3A1F15252ECE279C5A8DDDF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19D13483CF3BB067EE23680C /* Pods_FindBarber.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C827E7141FBA3FBC009539A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C827E7251FBA496E009539A9 /* Pins */,
+				C827E7151FBA3FD8009539A9 /* Map */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C827E7151FBA3FD8009539A9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C827E7161FBA3FD8009539A9 /* MapView.swift */,
+				C827E7171FBA3FD8009539A9 /* MapView.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C827E71C1FBA4753009539A9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C827E7331FBA61DF009539A9 /* password.png */,
+				C827E7321FBA61DF009539A9 /* search.png */,
+				C827E7341FBA61E0009539A9 /* username.png */,
+				C827E7301FBA6180009539A9 /* settings_icon.png */,
+				C827E72E1FBA5C5F009539A9 /* discover_icon.png */,
+				C827E72C1FBA5459009539A9 /* discover.png */,
+				C827E72A1FBA50CC009539A9 /* login_icon.png */,
+				C827E7211FBA48BD009539A9 /* location_tab_selected.png */,
+				C827E7221FBA48BD009539A9 /* location_tab.png */,
+				C827E71D1FBA4753009539A9 /* man_img.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C827E7251FBA496E009539A9 /* Pins */ = {
+			isa = PBXGroup;
+			children = (
+				C827E7261FBA496E009539A9 /* RKPinView.swift */,
+				C827E7271FBA496E009539A9 /* RKPinView.xib */,
+			);
+			path = Pins;
+			sourceTree = "<group>";
+		};
+		C840A58E1FBA26DD0020B339 = {
+			isa = PBXGroup;
+			children = (
+				C840A5991FBA26DE0020B339 /* FindBarber */,
+				C840A5981FBA26DE0020B339 /* Products */,
+				311455158CC86AF7CAD2304C /* Pods */,
+				3A1F15252ECE279C5A8DDDF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C840A5981FBA26DE0020B339 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C840A5971FBA26DE0020B339 /* FindBarber.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C840A5991FBA26DE0020B339 /* FindBarber */ = {
+			isa = PBXGroup;
+			children = (
+				C827E71C1FBA4753009539A9 /* Resource */,
+				C827E7141FBA3FBC009539A9 /* View */,
+				C840A5B71FBA36620020B339 /* TblCell */,
+				C840A5B21FBA2F550020B339 /* TabBarVC */,
+				C840A5AF1FBA2E360020B339 /* ConstantFiles */,
+				C840A5AC1FBA2A000020B339 /* CustomButton */,
+				C840A59A1FBA26DE0020B339 /* AppDelegate.swift */,
+				C840A59C1FBA26DE0020B339 /* ViewController.swift */,
+				C840A59E1FBA26DE0020B339 /* Main.storyboard */,
+				C840A5A11FBA26DE0020B339 /* Assets.xcassets */,
+				C840A5A31FBA26DE0020B339 /* LaunchScreen.storyboard */,
+				C827E71A1FBA40EA009539A9 /* GoogleService-Info.plist */,
+				C840A5A61FBA26DE0020B339 /* Info.plist */,
+			);
+			path = FindBarber;
+			sourceTree = "<group>";
+		};
+		C840A5AC1FBA2A000020B339 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				C840A5AD1FBA2A550020B339 /* CustomRoundCornerBtn.swift */,
+				C827E71F1FBA479E009539A9 /* CustomRoundImageView.swift */,
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
+		C840A5AF1FBA2E360020B339 /* ConstantFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C840A5B01FBA2E620020B339 /* AppConstant.swift */,
+			);
+			path = ConstantFiles;
+			sourceTree = "<group>";
+		};
+		C840A5B21FBA2F550020B339 /* TabBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				C840A5B31FBA2F860020B339 /* DiscoverVC.swift */,
+				C840A5B51FBA2FBF0020B339 /* NearByVC.swift */,
+			);
+			path = TabBarVC;
+			sourceTree = "<group>";
+		};
+		C840A5B71FBA36620020B339 /* TblCell */ = {
+			isa = PBXGroup;
+			children = (
+				C840A5B81FBA36870020B339 /* DiscoverTblCell.swift */,
+				C827E7381FBA669E009539A9 /* BarberCollectionCell.swift */,
+			);
+			path = TblCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C840A5961FBA26DD0020B339 /* FindBarber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C840A5A91FBA26DE0020B339 /* Build configuration list for PBXNativeTarget "FindBarber" */;
+			buildPhases = (
+				CA50983EDE6FD8E0C35B21EB /* [CP] Check Pods Manifest.lock */,
+				C840A5931FBA26DD0020B339 /* Sources */,
+				C840A5941FBA26DD0020B339 /* Frameworks */,
+				C840A5951FBA26DD0020B339 /* Resources */,
+				A5CE18E101FEF4194D508C12 /* [CP] Embed Pods Frameworks */,
+				43304F0C2B7564F17526D661 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindBarber;
+			productName = FindBarber;
+			productReference = C840A5971FBA26DE0020B339 /* FindBarber.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C840A58F1FBA26DD0020B339 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Reus;
+				TargetAttributes = {
+					C840A5961FBA26DD0020B339 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C840A5921FBA26DD0020B339 /* Build configuration list for PBXProject "FindBarber" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C840A58E1FBA26DD0020B339;
+			productRefGroup = C840A5981FBA26DE0020B339 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C840A5961FBA26DD0020B339 /* FindBarber */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C840A5951FBA26DD0020B339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C827E7231FBA48BD009539A9 /* location_tab_selected.png in Resources */,
+				C827E7311FBA6180009539A9 /* settings_icon.png in Resources */,
+				C840A5A51FBA26DE0020B339 /* LaunchScreen.storyboard in Resources */,
+				C827E7351FBA61E0009539A9 /* search.png in Resources */,
+				C827E7241FBA48BD009539A9 /* location_tab.png in Resources */,
+				C827E7291FBA496F009539A9 /* RKPinView.xib in Resources */,
+				C827E72B1FBA50CC009539A9 /* login_icon.png in Resources */,
+				C840A5A21FBA26DE0020B339 /* Assets.xcassets in Resources */,
+				C827E71E1FBA4753009539A9 /* man_img.png in Resources */,
+				C827E71B1FBA40EA009539A9 /* GoogleService-Info.plist in Resources */,
+				C827E72D1FBA5459009539A9 /* discover.png in Resources */,
+				C827E7191FBA3FD8009539A9 /* MapView.xib in Resources */,
+				C827E7361FBA61E0009539A9 /* password.png in Resources */,
+				C840A5A01FBA26DE0020B339 /* Main.storyboard in Resources */,
+				C827E72F1FBA5C5F009539A9 /* discover_icon.png in Resources */,
+				C827E7371FBA61E0009539A9 /* username.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43304F0C2B7564F17526D661 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindBarber/Pods-FindBarber-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5CE18E101FEF4194D508C12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindBarber/Pods-FindBarber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA50983EDE6FD8E0C35B21EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C840A5931FBA26DD0020B339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C840A59D1FBA26DE0020B339 /* ViewController.swift in Sources */,
+				C827E7281FBA496F009539A9 /* RKPinView.swift in Sources */,
+				C840A5B61FBA2FBF0020B339 /* NearByVC.swift in Sources */,
+				C827E7201FBA479E009539A9 /* CustomRoundImageView.swift in Sources */,
+				C827E7181FBA3FD8009539A9 /* MapView.swift in Sources */,
+				C840A5B41FBA2F860020B339 /* DiscoverVC.swift in Sources */,
+				C840A5AE1FBA2A550020B339 /* CustomRoundCornerBtn.swift in Sources */,
+				C827E7391FBA669E009539A9 /* BarberCollectionCell.swift in Sources */,
+				C840A59B1FBA26DE0020B339 /* AppDelegate.swift in Sources */,
+				C840A5B11FBA2E620020B339 /* AppConstant.swift in Sources */,
+				C840A5B91FBA36870020B339 /* DiscoverTblCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C840A59E1FBA26DE0020B339 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C840A59F1FBA26DE0020B339 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C840A5A31FBA26DE0020B339 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C840A5A41FBA26DE0020B339 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C840A5A71FBA26DE0020B339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C840A5A81FBA26DE0020B339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C840A5AA1FBA26DE0020B339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C64DEBBC32EB94F95BF066 /* Pods-FindBarber.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CL5S2K6AL8;
+				INFOPLIST_FILE = FindBarber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RK.FindBarber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C840A5AB1FBA26DE0020B339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13AB17E40BD8A19925C9D7C /* Pods-FindBarber.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CL5S2K6AL8;
+				INFOPLIST_FILE = FindBarber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RK.FindBarber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C840A5921FBA26DD0020B339 /* Build configuration list for PBXProject "FindBarber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C840A5A71FBA26DE0020B339 /* Debug */,
+				C840A5A81FBA26DE0020B339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C840A5A91FBA26DE0020B339 /* Build configuration list for PBXNativeTarget "FindBarber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C840A5AA1FBA26DE0020B339 /* Debug */,
+				C840A5AB1FBA26DE0020B339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C840A58F1FBA26DD0020B339 /* Project object */;
+}

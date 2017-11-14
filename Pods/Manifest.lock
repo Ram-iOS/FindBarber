@@ -1,0 +1,22 @@
+PODS:
+  - Cosmos (11.0.3)
+  - GoogleMaps (2.4.0):
+    - GoogleMaps/Maps (= 2.4.0)
+  - GoogleMaps/Base (2.4.0)
+  - GoogleMaps/Maps (2.4.0):
+    - GoogleMaps/Base
+  - IQKeyboardManagerSwift (4.0.12)
+
+DEPENDENCIES:
+  - Cosmos
+  - GoogleMaps
+  - IQKeyboardManagerSwift (~> 4.0)
+
+SPEC CHECKSUMS:
+  Cosmos: eb506859929f4add2d2aec822a27efb2f718a95d
+  GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
+  IQKeyboardManagerSwift: 3c66bea62a7d955b67b0eef0e31522b46261336b
+
+PODFILE CHECKSUM: 06d10ffd20e71b74b0503564af665f27a1cc25da
+
+COCOAPODS: 1.2.0
